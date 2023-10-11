@@ -1,0 +1,26 @@
+GET http://localhost:3000 HTTP/1.1
+###
+GET http://localhost:3000/test HTTP/1.1
+###
+GET https://localhost:3000/api/fruits HTTP/1.1
+###
+GET https://localhost:3000/api HTTP/1.1
+###
+POST https://localhost:3000/api/fruits HTTP/1.1
+content-type: application/json
+
+{
+    "id":"2",
+    "name":"Apple"
+}
+###
+DELETE https://localhost:3000/api/fruits/64f5c529bebd6ee0f319af98 HTTP/1.1
+###
+POST https://localhost:3000/api/users/signup HTTP/1.1
+content-type: application/json
+
+{
+    "username":"test",
+    "password":"youwillneverguess"
+}
+###
